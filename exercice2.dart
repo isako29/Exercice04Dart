@@ -12,4 +12,9 @@ void display (){
   print('coordonnées : ($_x,$_y)');
 }
 }
-
+void main(){
+  var pt = Point(2, 4);
+  pt.display();
+  pt.move(-1, 3);
+  pt.display();
+}
