@@ -13,4 +13,8 @@ String get solde => '${_solde.toStringAsFixed(2)} \$';
 }
 
 
-  
+  void main() {
+  final compte = Compte('CORNEILEKOFO29');
+  compte.depot(150.0);
+  print('Solde actuel: ${compte.solde}');
+}
