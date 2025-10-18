@@ -78,4 +78,8 @@ void main() {
   catalogue.add(Film("The Matrix", 136));
   catalogue.add(Media("Média anonyme")); // Un média générique
   
-  
+  // Parcours de la liste et appel de afficherType() pour chaque élément
+  for (var media in catalogue) {
+    media.afficherType(); // Polymorphisme : chaque objet utilise sa version de la méthode
+  }
+}
