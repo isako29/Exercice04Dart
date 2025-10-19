@@ -42,4 +42,10 @@ void main() {
   services.add(serveur);
   services.add(bdd);
   
-  
+  // Parcours de la liste et exécution des méthodes
+  for (var service in services) {
+    service.connecter("admin"); // Connexion avec l'utilisateur "admin"
+    service.deconnecter();      // Déconnexion
+    print("---"); // Séparateur pour plus de clarté
+  }
+}
