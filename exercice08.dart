@@ -64,4 +64,15 @@ void main() {
   // Affichage du nombre total de livres avec la méthode statique
   Livre.afficherTotalLivres();
   
-  // 
+  // Création de plusieurs objets Roman
+  Roman roman1 = Roman("Le Parfum", "Patrick Süskind", "Historique");
+  Roman roman2 = Roman("Da Vinci Code", "Dan Brown", "Policier", 480);
+  Roman roman3 = Roman("Harry Potter", "J.K. Rowling", "Fantastique", 320);
+  
+  // Affichage des informations des romans
+  print("\n=== ROMANS ===");
+  roman1.afficherInfos();
+  roman2.afficherInfos();
+  roman3.afficherInfos();
+  
+  
