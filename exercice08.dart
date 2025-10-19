@@ -75,4 +75,13 @@ void main() {
   roman2.afficherInfos();
   roman3.afficherInfos();
   
+  // Utilisation de la méthode spécifique à Roman
+  print("\n=== GENRES DES ROMANS ===");
+  roman1.afficherGenre();
+  roman2.afficherGenre();
+  roman3.afficherGenre();
   
+  // Affichage final du nombre total (incluant les romans)
+  print("\n=== TOTAL FINAL ===");
+  Livre.afficherTotalLivres();
+}
