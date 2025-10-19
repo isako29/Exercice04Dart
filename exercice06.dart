@@ -17,4 +17,29 @@ class ServeurAPI implements Connectable {
   }
 }
 
-// 
+// Classe BaseDeDonnees qui implémente également Connectable
+class BaseDeDonnees implements Connectable {
+  @override
+  void connecter(String utilisateur) {
+    print("BaseDeDonnees: Connexion établie pour $utilisateur.");
+  }
+
+  @override
+  void deconnecter() {
+    print("BaseDeDonnees: Déconnexion réussie.");
+  }
+}
+
+void main() {
+  // Création d'instances de ServeurAPI et BaseDeDonnees
+  ServeurAPI serveur = ServeurAPI();
+  BaseDeDonnees bdd = BaseDeDonnees();
+  
+  // Création d'une liste de type List<Connectable>
+  List<Connectable> services = [];
+  
+  // Ajout des instances à la liste
+  services.add(serveur);
+  services.add(bdd);
+  
+  
