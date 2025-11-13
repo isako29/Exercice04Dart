@@ -53,7 +53,7 @@ void main() {
   Livre livre3 = Livre("L'Étranger", "Albert Camus", 185);
   
   // Affichage des informations des livres
-  print("=== LIVRES ===");
+  print("LIVRES");
   livre1.afficherInfos();
   livre2.afficherInfos();
   livre3.afficherInfos();
@@ -70,18 +70,18 @@ void main() {
   Roman roman3 = Roman("Harry Potter", "J.K. Rowling", "Fantastique", 320);
   
   // Affichage des informations des romans
-  print("\n=== ROMANS ===");
+  print("ROMANS");
   roman1.afficherInfos();
   roman2.afficherInfos();
   roman3.afficherInfos();
   
   // Utilisation de la méthode spécifique à Roman
-  print("\n=== GENRES DES ROMANS ===");
+  print("GENRES DES ROMANS ");
   roman1.afficherGenre();
   roman2.afficherGenre();
   roman3.afficherGenre();
   
   // Affichage final du nombre total (incluant les romans)
-  print("\n=== TOTAL FINAL ===");
+  print("TOTAL FINAL ");
   Livre.afficherTotalLivres();
 }
